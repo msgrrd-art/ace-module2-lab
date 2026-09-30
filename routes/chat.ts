@@ -39,6 +39,7 @@ export function summarizeLlmError (error: unknown): string {
 
 const botName = config.get<string>('application.chatBot.name')
 const appName = config.get<string>('application.name')
+const a=0
 
 export async function getUserId (req: Request): Promise<number | undefined> {
   const token = utils.jwtFrom(req)
